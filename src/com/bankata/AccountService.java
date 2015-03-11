@@ -7,6 +7,13 @@ public class AccountService {
         this.clock = clock;
     }
 
+    private final Console console;
+
+    public AccountService(Console console) {
+        this.console=console;
+
+    }
+
     public String haciendoEsto(){
         return "esto";
     }
