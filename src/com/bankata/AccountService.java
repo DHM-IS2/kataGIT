@@ -1,20 +1,15 @@
 package com.bankata;
 
 public class AccountService {
-    private Clock clock;
-
-    public AccountService(Clock clock) {
-        this.clock = clock;
-    }
-
+    private final Clock clock;
     private final Console console;
 
-    public AccountService(Console console) {
-        this.console=console;
-
+    public AccountService(Clock clock, Console console) {
+        this.clock = clock;
+        this.console = console;
     }
 
-    public String haciendoEsto(){
+    public String haciendoEsto() {
         return "esto";
     }
 }
